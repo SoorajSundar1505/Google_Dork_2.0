@@ -1,0 +1,65 @@
+label {
+    white-space: nowrap; /* Prevent wrapping to the next line */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Display an ellipsis (...) for overflow */
+    display: inline-block; /* Ensure block-level behavior */
+    max-width: 95%; /* Ensure the label does not overflow its container */
+    color: black;
+    margin-bottom: -2%;
+}
+
+    table {
+        border-collapse: collapse;
+        width: 40%;
+        margin: 20px auto;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+
+    input {
+        margin-right: 5px;
+        border: none;
+    }
+
+    .pagination {
+        margin-left: 35%;
+    }
+
+    .page {
+        display: inline-block;
+        padding: 5px;
+        margin-right: 5px;
+        cursor: pointer;
+        border: 1px solid #ddd;
+    }
+
+    .first-column {
+        width: 16%;
+    }
+
+    .active {
+        background-color: #ddd;
+    }
+
+
+    /* Search and add */
+    #searchIconButton {
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 37%;
+        border: none;
+        border-radius: 5px;
+        background-color: #6b2f01; /* Dark Orange */
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    #searchIconButton:hover {
+        background-color: #6b2f01; /* Darker Orange on hover */
+    }
+
+    

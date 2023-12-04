@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Google Dork Search",
+  "version": "1.0",
+  "description": "Search Google with Dorks",
+
+  "permissions": ["activeTab", "storage"],
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "icons": {
+    "48": "icon.png"
+  },
+
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
