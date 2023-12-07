@@ -1,21 +1,17 @@
 {
   "manifest_version": 2,
-  "name": "DorkRecon Chrome",
+  "name": "Google Dork Explorer",
   "version": "1.0",
-  "description": "Search Google with Dorks",
-
-  "permissions": ["activeTab", "storage"],
-
+  "description": "Unlock the power of Google Dorks with the Google Dork Explorer extension! Google Dorks are powerful search queries that enable advanced searches on Google to uncover hidden information and vulnerabilities. This extension provides a user-friendly interface to explore and utilize various Google Dorks effortlessly.",
   "browser_action": {
-    "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
-
-  "icons": {
-    "48": "icon.png"
-  },
-
-  "content_security_policy": {
-    "extension_pages": "script-src 'self'; object-src 'self'"
-  }
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "js": ["popup.js"]
+    }
+  ]
 }
