@@ -3,25 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Checkbox Table</title>
+    <title>Google Dork Extension</title>
     <link rel="stylesheet" href="popup.css" />
 </head>
 <body>
-    <div id="inputContainer">
-    <table id="checkboxTable">
-        <thead>
-            <tr>
-                
-            </tr>
-        </thead>
-        <tbody id="checkboxBody"></tbody>
-    </table>
+    <header>
+        <center>
+            <h1>DorkRecon Chrome</h1>
+        </center>
+    </header>
 
-    <div class="pagination" id="pagination"></div>
+    <div id="inputContainer">
+        <table id="checkboxTable">
+            <thead>
+                <tr>
+                    <!-- Add your table header content here if needed -->
+                </tr>
+            </thead>
+            <tbody id="checkboxBody"></tbody>
+        </table>
+
+        <!-- <div class="pagination" id="pagination"></div> -->
     </div>
 
     <footer>
-        <button id="searchIconButton" onclick="searchInGoogle()">🔍</button>
+        <div class="pagination" id="pagination"></div>
+        <button id="searchIconButton" onclick="searchInGoogle()">🔍 Search in Google</button>
     </footer>
 
     <div id="capturedValues"></div>

@@ -5,21 +5,16 @@
         let dork = '';
         
         const googleDorks = [
-    { label: 'sites:', prefix: '' },
-    { label: 'types:', prefix: '' },
-    { label: 'cache:', prefix: '' },
-    { label: 'allintitle:', prefix: '' },
+    { label: 'intitle:', prefix: '' },
     { label: 'inurl:', prefix: '' },
+    { label: 'intext:', prefix: '' },
+    { label: 'define:', prefix: '' },
+    { label: 'site:', prefix: '' },
+    { label: 'filetype:', prefix: '' },
     { label: 'allinurl:', prefix: '' },
-    { label: 'intitle:', prefix: '' },
-    { label: 'sites:', prefix: '' },
-    { label: 'types:', prefix: '' },
     { label: 'cache:', prefix: '' },
-    { label: 'allinurl:', prefix: '' },
-    { label: 'intitle:', prefix: '' },
-    { label: 'sites:', prefix: '' },
+    { label: 'inanchor:', prefix: '' },
     { label: 'types:', prefix: '' },
-    { label: 'cache:', prefix: '' },
 ];
 
         function handleCheckboxChange(checkbox, label, input) {
