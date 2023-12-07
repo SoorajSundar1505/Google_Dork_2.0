@@ -36,6 +36,7 @@
                 input.disabled = !checkbox.checked;
 
                 updateCapturedValues();
+                updateSearchButton()
             });
         }
 
@@ -47,6 +48,7 @@
                     capturedValues[index].input = input.value;
                 }
                 updateCapturedValues();
+                updateSearchButton()
             });
         }
 
@@ -54,7 +56,14 @@
             const capturedValuesContainer = document.getElementById('capturedValues');
             const valuesString = capturedValues.map(value => `${value.label}${value.input || ''}`).join(' ');
             dork=valuesString
+            updateSearchButton()
         }
+
+        function updateSearchButton() {
+            const searchButton = document.getElementById('searchIconButton');
+            searchButton.disabled = capturedValues.length === 0; // Disable if no checkboxes are checked
+        }
+
 
         // Modify the existing displayCheckboxes function
         function displayCheckboxes(page) {
