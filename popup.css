@@ -28,11 +28,15 @@ th, td {
 input {
     margin-right: 5px;
     border: none;
+    margin-bottom:4%;
 }
 
 .pagination {
-    margin-left: 35%;
-    display: inline;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 60px;
 }
 
 .page {
@@ -54,7 +58,7 @@ input {
 /* Search and add */
 #searchIconButton {
     padding: 10px;
-    margin-top: 0px;
+    margin-top: 7px;
     border: none;
     border-radius: 5px;
     background-color: #a00; 
@@ -76,6 +80,6 @@ footer {
 }
 
 h1{
-    margin-right: 20%;
+    margin-right: 3%;
     color: #a00;
 }

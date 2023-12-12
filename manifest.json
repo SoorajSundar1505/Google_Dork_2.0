@@ -4,9 +4,15 @@
   "version": "1.0",
   "description": "Unlock the power of Google Dorks with the Google Dork Explorer extension!",
   "author": "Suraj Sundar",
+  "icons":{
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Google dork explorer"
+    "default_title": "Google dork explorer",
+    "default_icon": "icon.png"
   },
   "content_scripts": [
     {
@@ -14,5 +20,8 @@
       "js": ["popup.js"],
       "css": ["popup.css"]
     }
+  ],
+  "permissions": [
+    "activeTab"
   ]
 }

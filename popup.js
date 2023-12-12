@@ -142,11 +142,16 @@
         displayCheckboxes(currentPage);
         generatePaginationButtons();
 
-        function searchInGoogle(){
+        // function searchInGoogle(){
+        //     var searchUrl = 'https://www.google.com/search?q=' + encodeURIComponent(dork);
+        //     window.open(searchUrl, "_blank");
+        //     searchWithDork(dork)
+        // }
+
+        document.getElementById('searchIconButton').addEventListener('click',function(){
             var searchUrl = 'https://www.google.com/search?q=' + encodeURIComponent(dork);
             window.open(searchUrl, "_blank");
-            searchWithDork(dork)
-        }
+        })
 
 
 
