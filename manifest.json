@@ -1,17 +1,18 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Google Dork Explorer",
   "version": "1.0",
-  "description": "Unlock the power of Google Dorks with the Google Dork Explorer extension! Google Dorks are powerful search queries that enable advanced searches on Google to uncover hidden information and vulnerabilities. This extension provides a user-friendly interface to explore and utilize various Google Dorks effortlessly.",
-  "browser_action": {
-    "default_popup": "popup.html"
+  "description": "Unlock the power of Google Dorks with the Google Dork Explorer extension!",
+  "author": "Suraj Sundar",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Google dork explorer"
   },
-  "permissions": [
-    "storage"
-  ],
   "content_scripts": [
     {
-      "js": ["popup.js"]
+      "matches": ["<all_urls>"],
+      "js": ["popup.js"],
+      "css": ["popup.css"]
     }
   ]
 }
